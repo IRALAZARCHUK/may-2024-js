@@ -202,41 +202,59 @@
 // car.addDriver();
 // console.log(car);
 /*---*/
-class Cinderella{
-    constructor(name, age, footSize) {
-        this.name = name;
-        this.age = age;
-        this.footSize = footSize;
-    }
-}
-class Prince{
-    constructor(name, age, shoeFound) {
-        this.name = name;
-        this.age = age;
-        this.shoeFound = shoeFound;
-    }
-}
-let Cinderellas =[
-    new Cinderella('Alice', 25, 36),
-    new Cinderella('Aley', 35, 38),
-    new Cinderella('Olivia', 25, 40),
-    new Cinderella('Ingret', 28, 37),
-    new Cinderella('Monika', 25, 36),
-    new Cinderella('Karol', 27, 35),
-    new Cinderella('Malvel', 22, 36),
-    new Cinderella('Pedra', 35, 39),
-    new Cinderella('Ires', 21, 34),
-    new Cinderella('Alice', 25, 37),
-
-]
-let prince = new Prince('Petro', 25 ,34)
-for (const Cinderella of Cinderellas) {
-    if(Cinderella.footSize === prince.shoeFound){
-console.log(`Prince found his cinderella`)
-    }
-}
-
-let cinderellaOne = Cinderellas.find(Cinderella=>Cinderella.footSize===prince.shoeFound);
-prince.found = cinderellaOne
-console.log(cinderellaOne)
+// class Cinderella{
+//     constructor(name, age, footSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.footSize = footSize;
+//     }
+// }
+// class Prince{
+//     constructor(name, age, shoeFound) {
+//         this.name = name;
+//         this.age = age;
+//         this.shoeFound = shoeFound;
+//     }
+// }
+// let Cinderellas =[
+//     new Cinderella('Alice', 25, 36),
+//     new Cinderella('Aley', 35, 38),
+//     new Cinderella('Olivia', 25, 40),
+//     new Cinderella('Ingret', 28, 37),
+//     new Cinderella('Monika', 25, 36),
+//     new Cinderella('Karol', 27, 35),
+//     new Cinderella('Malvel', 22, 36),
+//     new Cinderella('Pedra', 35, 39),
+//     new Cinderella('Ires', 21, 34),
+//     new Cinderella('Alice', 25, 37),
+//
+// ]
+// let prince = new Prince('Petro', 25 ,34)
+// for (const Cinderella of Cinderellas) {
+//     if(Cinderella.footSize === prince.shoeFound){
+// console.log(`Prince found his cinderella`)
+//     }
+// }
+//
+// let cinderellaOne = Cinderellas.find(Cinderella=>Cinderella.footSize===prince.shoeFound);
+// prince.found = cinderellaOne
+// console.log(cinderellaOne)
 /*-Через Array.prototype. створити власний foreach, filter-*/
+// Array.prototype.myForEach = function (callback){
+//     const newArray = this;
+//     for (const item of newArray) {
+//                     callback(item)
+//     }
+// };
+//
+//    [10, 15, 22].myForEach((x)=>console.log(x));
+
+// Array.prototype.myFilter = function (predicate){
+//     const arr =[]
+//     for (const item of this) {
+//         if(predicate(item)){
+//             arr.push(item);
+//         }
+//     }
+//     return arr;
+// }
