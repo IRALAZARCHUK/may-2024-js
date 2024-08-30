@@ -87,3 +87,42 @@ addToLocalStorage(arrayName:string,objToAdd:any{}):void-*/
 //     price.innerText = currentPrice + 'грн'
 //     localStorage.setItem('reload', currentTime)
 // }
+/*-----*/
+// const items = Array.from({length:100}, (name,index)=>({
+//     id:index+1,
+//     name:`Object ${index+1}`
+// }));
+//
+// let currentPage = 0;
+// let itemsPage = 10;
+//
+// function display(){
+//     const container = document.getElementById('container')
+//     container.innerHTML = '';
+//
+//     const start = currentPage * itemsPage
+//     const end  = start + itemsPage;
+//     const itemsShow = items.slice(start,end)
+//
+//     itemsShow.forEach(item =>{
+//         const div =document.createElement('div')
+//         div.className = 'newDiv'
+//         div.innerText = `ID:${item.id}, Name:${item.name}`;
+//         container.appendChild(div)
+//     })
+//
+//     document.getElementById('prev').disabled = currentPage === 0;
+//     document.getElementById('next').disabled = end>= items.length;
+// }
+// document.getElementById('prev').addEventListener("click", ()=>{
+//     if (currentPage > 0){ currentPage--;
+//     display()
+// }
+// })
+// document.getElementById('next').addEventListener("click", ()=>{
+//     if ((currentPage + 1) * itemsPage < items.length){currentPage++;
+//     display()
+//     }
+// })
+//
+// display()
